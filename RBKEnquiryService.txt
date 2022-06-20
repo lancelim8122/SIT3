@@ -1,0 +1,38 @@
+public RetriveLstOfAccInfoDetailRes GetAcctInfoComposite(RetriveLstOfAccInfoDetailReq EnqReq)
+        {
+            MQQueues mqQueues = RIMSMQManager.Instance.mqConfig.CompositeQueues;
+            RetriveLstOfAccInfoDetailRes response = EnqReq != null ? wmqSrv.MQRequestResponse<RetriveLstOfAccInfoDetailRes, RetriveLstOfAccInfoDetailReq>(EnqReq, mqQueues) : new RetriveLstOfAccInfoDetailRes();
+            return response;
+        }
+        public EntityActiveAccSummaryInqRes GetEntityActiveAccountSummaryComposite(EntityActiveAccSummaryInqReq EnqReq)
+        {
+            MQQueues mqQueues = RIMSMQManager.Instance.mqConfig.CompositeQueues;
+            EntityActiveAccSummaryInqRes response = EnqReq != null ? wmqSrv.MQRequestResponse<EntityActiveAccSummaryInqRes, EntityActiveAccSummaryInqReq>(EnqReq, mqQueues) : new EntityActiveAccSummaryInqRes();
+            return response;
+        }
+        public RetriveLstOfCustWtEntityRes GetListofCustWtEntityComposite(RetriveLstOfCustWtEntityReq EnqReq)
+        {
+            MQQueues mqQueues = RIMSMQManager.Instance.mqConfig.CompositeQueues;
+            RetriveLstOfCustWtEntityRes response = EnqReq != null ? wmqSrv.MQRequestResponse<RetriveLstOfCustWtEntityRes, RetriveLstOfCustWtEntityReq>(EnqReq, mqQueues) : new RetriveLstOfCustWtEntityRes();
+            return response;
+        }
+        public RetrieveAcctToAddrRelationInqRes GetAcctToAddrRelationComposite(RetrieveAcctToAddrRelationInqReq EnqReq)
+        {
+            MQQueues mqQueues = RIMSMQManager.Instance.mqConfig.CompositeQueues;
+            RetrieveAcctToAddrRelationInqRes response = EnqReq != null ? wmqSrv.MQRequestResponse<RetrieveAcctToAddrRelationInqRes, RetrieveAcctToAddrRelationInqReq>(EnqReq, mqQueues) : new RetrieveAcctToAddrRelationInqRes();
+            return response;
+        }
+
+        public RetrieveCustomerBasicDataInqRes GetCustomerBasicInfoComposite(RetrieveCustomerBasicDataInqReq EnqReq)
+        {
+            MQQueues mqQueues = RIMSMQManager.Instance.mqConfig.CompositeQueues;
+            RetrieveCustomerBasicDataInqRes response = EnqReq != null ? wmqSrv.MQRequestResponse<RetrieveCustomerBasicDataInqRes, RetrieveCustomerBasicDataInqReq>(EnqReq, mqQueues) : new RetrieveCustomerBasicDataInqRes();
+            return response;
+        }
+
+        public CreditCardInfoInqRes GetCreditCardInfoComposite(CreditCardInfoInqReq EnqReq)
+        {
+            MQQueues mqQueues = RIMSMQManager.Instance.mqConfig.CompositeQueues;
+            CreditCardInfoInqRes response = EnqReq != null ? wmqSrv.MQRequestResponse<CreditCardInfoInqRes, CreditCardInfoInqReq>(EnqReq, mqQueues) : new CreditCardInfoInqRes();
+            return response;
+        }
